@@ -3,47 +3,48 @@
 	<head>
 		<meta charset="utf-8">
 		<link type="text/css" rel="stylesheet" href="css/style.css" />
+		<link type="text/css" rel="stylesheet" href="css/fonts/ptserif.css" />
 	</head>
 	<body>
 		<div class="header">
-			<div class="inner-header">
-				<div class="logo">
-					<img src="img/logo.png">
+			<div class="header-inner">
+				<div class="header-logo">
+					<a href="#" class="header-logo__link"><img class="header-logo__image" src="img/logo.png"></a>
 				</div>
-				<div class="right">
-					<ul>
-						<li class="active">
-							<a href="#">Главная</a>
+				<div class="header-right">
+					<ul class="header-right__menu">
+						<li class="header-right__item active">
+							<a class="header-right__link" href="#">Главная</a>
 						</li>
-						<li>
-							<a href="#">Лента</a>
+						<li class="header-right__item">
+							<a class="header-right__link" href="#">Лента</a>
 						</li>
-						<li>
-							<a href="#">Новости</a>
+						<li class="header-right__item">
+							<a class="header-right__link" href="#">Новости</a>
 						</li>
-						<li>
-							<a href="#">Библиографии</a>
+						<li class="header-right__item">
+							<a class="header-right__link" href="#">Библиографии</a>
 						</li>
-						<li>
-							<a href="#">Инструкция</a>
+						<li class="header-right__item">
+							<a class="header-right__link" href="#">Инструкция</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</div>		
 		<div class="content-block">
-			<div class="inner-content-block">
-				<div class="left">
-					<div class="search">
-						<input class="input-search" type="search" name="search" placeholder="Ищите произведение? Пример: Мертвые души">
-						<input class="search-button" type="submit" name="">
+			<div class="content-block-inner">
+				<div class="content-block-left">
+					<div class="content-block-search">
+						<input class="content-block-search__input" type="search" name="search" placeholder="Ищите произведение? Пример: Мертвые души">
+						<input class="content-block-search__button" type="submit" name="">
 					</div>
 					<div class="book">
-						<div class="left-book">
-							<div class="title-book">
+						<div class="book-left">
+							<div class="book-title">
 								Будущее
 							</div>
-							<div class="description">
+							<div class="book-description">
 								<p><b>Автор:</b> <a href="#">Глуховский Дмитрий</a></p>
 								<p><b>Произведение:</b> <a href="#">Будущее</a></p>
 								<p><b>Жанр:</b> Фантастика	</p>
@@ -54,34 +55,32 @@
 								<p>Уже при нашей жизни будут сделаны открытия, которые позволят людям оставаться вечно молодыми. Смерти больше нет. Наши дети не умрут никогда. Добро пожаловать в будущее. В мир, населенный вечно юными, совершенно здоровыми, счастливыми людьми. Но будут ли они такими же, как мы? Нужны ли дети, если за них придется пожертвовать бессмертием? Нужна ли семья тем, кто не может завести детей? Нужна ли душа людям, тело которых не стареет? Утопия «БУДУЩЕЕ» — первый после пяти лет молчания роман Дмитрия Глуховского, автора культового романа «МЕТРО 2033» и триллера «Сумерки». Книги писателя переведены на десятки иностранных языков, продаются миллионными тиражами и экранизируются в Голливуде. Но ни одна из них не захватит вас так, как «БУДУЩЕЕ».</p>
 							</div>
 						</div>
-						<div class="right-book">
-							<div class="image-book">
+						<div class="book-right">
+							<div class="book-right__image">
 							</div>
-							<div class="rating-book">
+							<div class="book-right__rating">
 								8,2
 							</div>
-							<div class="number-of-ratings">
+							<div class="book-right__votes">
 								(1735)
 							</div>
-							<div class="remark-authorization">
-								Для оценки произведения необходима <span>авторизация</span>
+							<div class="book-remark">
+								Для оценки произведения необходима <a href="#" class="book-remark__link">авторизация</a>
 							</div>
-							<div class="number">
-								<div class="commets-number">
-									<div class="commets-icon"></div>
-									<div class="commets-text">368</div>
-								</div>
-								<div class="reviews-number">
-									<div class="reviews-icon"></div>
-									<div class="reviews-text">17</div>
-								</div>
+							<div class="book-commets-number">
+								<div class="book-commets-number__icon"></div>
+								<div class="book-commets-number__text">368</div>
+							</div>
+							<div class="book-commets-number">
+								<div class="book-commets-number__icon_review"></div>
+								<div class="book-commets-number__text">17</div>
 							</div>
 							<div>
 								<input type="button" class="button-buy-book" name="buy-book" value="Купить книгу">
 							</div>
 						</div>
 					</div>
-					<div class="tabs-block">
+					<div class="content-block-tabs-block">
   						<div class="tab">
   							<div class="tab1-icon">
   							</div>
@@ -102,8 +101,8 @@
   								17
   							</div>
   						</div>
-  						<div class="tab-reviews-block">
-  							<div class="review">
+  						<div class="comments-block">
+  							<div class="comments">
 	  							<div class="about">
 	  								<div class="left-about">
 		  								<div class="user-icon user-1">
@@ -128,7 +127,7 @@
   								</div>
 
   							</div>
-  							<div class="review">
+  							<div class="comments">
 	  							<div class="about">
 	  								<div class="left-about">
 		  								<div class="user-icon user-2">
@@ -153,7 +152,7 @@
   									<a href="#">Читать полностью</a>
   								</div>
   							</div>
-  							<div class="review">
+  							<div class="comments">
 	  							<div class="about">
 	  								<div class="left-about">
 		  								<div class="user-icon user-3">
@@ -183,7 +182,7 @@
   						</div>
 					</div>
 				</div>
-				<div class="right">
+				<div class="content-block-right">
 					<div class="form">
 						<div class="title">
 							Авторизация
@@ -220,11 +219,11 @@
 			<div class="clear"></div>
 		</div>
 		<div class="footer">
-			<div class="inner-footer">
-				<div class="left">
+			<div class="footer-inner">
+				<div class="footer-left">
 					© LitTime.ru 2014
 				</div>
-				<div class="right">
+				<div class="footer-right">
 					<a href="#" target="_blank"><img src="img/livejournal-icon.png"></a>
 					<a href="#" target="_blank"><img src="img/tumbler-icon.png"></a>
 					<a href="#" target="_blank"><img src="img/twitter-icon.png"></a>
