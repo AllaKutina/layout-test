@@ -149,6 +149,7 @@ body {
 	height: 40px;
 	border: none;
 	font-size: 15px;
+	padding-left: 20px;
 }
 
 .search__button {
@@ -167,9 +168,7 @@ body {
 
 .search__input::placeholder {
 	color: #999999;
-	padding-left: 20px;
 	font-style: italic;
-	padding-right: 40px;
 	font-family: 'PT Serif';
 }
 
@@ -324,39 +323,33 @@ body {
 
 
 .tabs {
+	display: flex;
 }
 
 .tabs-tab {
+	align-items: center;
+	display: flex;
 	position: relative;
-	display: inline-block;
-	margin-right: -3px;
 	background-color: #f8f8f4;
 	padding: 0 20px;
 	cursor: pointer;
 }
 
 .tabs-tab__icon {
-}
-
-.tabs-tab__icon_сomments {
-	display: inline-block;
-	background-image: url("../img/сomments-icon-tab.png");
 	background-repeat: no-repeat;
 	background-position: 0 50%;
 	height: 40px;
 	width: 15px;
-	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.tabs-tab__icon_сomments {
+	background-image: url("../img/сomments-icon-tab.png");
 }
 
 
 .tabs-tab__icon_reviews {
-	display: inline-block;
 	background-image: url("../img/reviews-icon-tab.png");
-	background-repeat: no-repeat;
-	background-position: 0 50%;
-	height: 40px;
-	width: 15px;
-	vertical-align: middle;
 }
 
 .tabs-tab__icon_reviews_active {
@@ -364,15 +357,12 @@ body {
 	}
 
 .tabs-tab__text {
-	display: inline-block;
-	vertical-align: middle;
+	margin-right: 5px;
 }
 
 .tabs-tab__number {
-	display: inline-block;
 	color: #999999;
 	font-size: 12px;
-	vertical-align: middle;
 }
 
 .tabs-tab-number_active {
@@ -470,18 +460,18 @@ body {
 	margin-left: auto;
 }
 
-.comment-info-right__number {
+.comment-info__number {
 	color: #999999;
 	margin-right: 8px;
 	align-self: center;
 }
 
-.comment-info-right__number_blue {
+.comment-info__number_blue {
 	color: #0d83dd;
 }
 
 
-.comment-info-right__arrow {
+.comment__arrow {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	height: 24px;
@@ -491,29 +481,29 @@ body {
 	cursor: pointer;
 }
 
-.comment-info-right__arrow_up {
+.comment__arrow_up {
 	background-image: url("../img/arrow-up-icon.png");
 	margin-right: 8px;
 }
 
 
-.comment-info-right__arrow_up_active {
+.comment__arrow_up_active {
 	background-image: url("../img/arrow-up-icon-active.png");
 }
 
 
-.comment-info-right__arrow_down {
+.comment__arrow_down {
 	background-image: url("../img/arrow-down-icon.png");
 	margin-right: 20px;
 }
 
 
-.comment-info-right__arrow_down_active {
+.comment__arrow_down_active {
 	background-image: url("../img/arrow-down-icon-active.png");
 }
 
 
-.comment-info-right__rating-icon {
+.comment__rating-icon {
 	background-image: url("../img/star-icon.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
@@ -524,13 +514,13 @@ body {
 }
 
 
-.comment-info-right__rating-number {
+.comment__rating-number {
 	color: #151515;
 	line-height: 16px;
 	align-self: center;
 }
 
-.comment-info-right .rating-number span{
+.comment__rating-number_grey{
 	color: #999999;
 }
 
@@ -566,6 +556,7 @@ body {
 }
 
 .form-authorization-fields__field {
+	padding-left: 30px;
 	width: 100%;
 	margin-bottom: 20px;
 	height: 36px;
@@ -578,7 +569,7 @@ body {
 }
 
 .form-authorization-field__field_login {
-	background-image: url("../img/login-icon.png");   
+	background-image: url("../img/login-icon.png");
 }
 
 
@@ -589,7 +580,6 @@ body {
 
 .form-authorization-fields__field::placeholder {
 	color: #999999;
-	padding-left: 30px;
 	font-style: italic;
 	font-family: 'PT Serif';
 }
@@ -622,7 +612,7 @@ body {
 }
 
 
-.enter-social-networks {
+.sign-in-social {
 	display: block;
 	height: 10px;
 	background-color: white;
@@ -633,11 +623,11 @@ body {
 	border-bottom: 1px solid #dadada;
 }
 
-.enter-social-networks__icons {
+.sign-in-social__icons {
 	padding-bottom: 15px;
 }
 
-.enter-social-networks__link{
+.sign-in-social__link{
 	display: inline-block;
 	background-image: url("../img/social-network-icon.png");   
     background-repeat: no-repeat;
@@ -645,27 +635,27 @@ body {
     width: 16px;
 }
  
-.enter-social-networks__link_vk {
+.sign-in-social__link_vk {
     background-position: 0px 0px;
 }
 
-.enter-social-networks__link_fb {
+.sign-in-social__link_fb {
     background-position: -21px 0px;
 }
 
-.enter-social-networks__link_tw {
+.sign-in-social__link_tw {
     background-position: -42px 0px;
 }
 
-.enter-social-networks__link_gl {
+.sign-in-social__link_gl {
     background-position: -63px 0px;
 }
 
-.enter-social-networks__link_ok {
+.sign-in-social__link_ok {
     background-position: -84px 0px;
 }
 
-.enter-social-networks__link_more {
+.sign-in-social__link_more {
     background-position: -105px 0px;
 }
 
