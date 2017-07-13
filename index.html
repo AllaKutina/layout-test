@@ -6,7 +6,7 @@
 	</head>
 	<body>
 		<div class="header">
-			<div class="header-inner">
+			<div class="inner">
 				<div class="header-logo">
 					<a href="#" class="header-logo__link"><img class="header-logo__image" src="img/logo.png"></a>
 				</div>
@@ -33,9 +33,9 @@
 				</div>
 			</div>
 		</div>		
-		<div class="content-block">
-			<div class="content-block-inner">
-				<div class="content-block-left">
+		<div class="container">
+			<div class="inner inner_container">
+				<div class="container-left">
 					<div class="search">
 						<input class="search__input" type="search" name="search" placeholder="Ищите произведение? Пример: Мертвые души">
 						<input class="search__button" type="submit" name="">
@@ -57,7 +57,7 @@
 							</div>
 						</div>
 						<div class="book-right">
-							<div class="book-right__image">
+							<div class="book-right__image" style="background-image:url(img/book-img.png)">
 							</div>
 							<div class="book-right__rating">
 								8,2
@@ -78,8 +78,8 @@
 									<div class="book-counters__text">17</div>
 								</div>
 							</div>
-							<div>
-								<input type="button" class="book__button-buy" name="buy-book" value="Купить книгу">
+							<div class="book__button">
+								<input type="button" class="button button_buy-book" name="buy-book" value="Купить книгу">
 							</div>
 						</div>
 					</div>
@@ -109,14 +109,16 @@
   						<div class="comment">
 	  						<div class="comment-info">
 	  							<div class="comment-info-left">
-		  							<div class="comment-info__user-icon comment-info__user-icon_1">
+		  							<div class="comment-info__user-icon" style="background-image:url(img/user-icon-1.png)">
 		  							</div>
-		  							<div class="comment-info-user-name">
-		  								<a class="comment-info-user-name__link" href="#">Fenixov</a>,
-		  							</div>
-		  							<div class="comment-info__date">
-		  								27 апреля 2014 в 04:01
-		  							</div>
+		  							<div>
+			  							<span class="comment-info-user-name">
+			  								<a class="comment-info-user-name__link" href="#">Fenixov</a>,
+			  							</span>
+			  							<span class="comment-info__date">
+			  								27 апреля 2014 в 04:01
+			  							</span>
+			  						</div>
 	  							</div>
 	  							<div class="comment-info-right">
 	  								<div class="comment-info__number comment-info__number_blue">+17</div>
@@ -133,14 +135,17 @@
   						<div class="comment">
 	  						<div class="comment-info">
 	  							<div class="comment-info-left">
-		  							<div class="comment-info__user-icon comment-info__user-icon_2">
+		  							<div class="comment-info__user-icon" style="background-image:url(img/user-icon-2.png)">
 		  							</div>
-		  							<div class="comment-info-user-name">
-		  								<a class="comment-info-user-name__link" href="#">Олег Максименко</a>,
+		  							<div>
+		  								<span class="comment-info-user-name">
+			  								<a class="comment-info-user-name__link" href="#">Олег Максименко</a>,
+			  							</span>
+			  							<span class="comment-info__date">
+			  								25 апреля 2014 в 13:43
+			  							</span>
 		  							</div>
-		  							<div class="comment-info__date">
-		  								25 апреля 2014 в 13:43
-		  							</div>
+		  							
 	  							</div>
 	  							<div class="comment-info-right">
 	  								<div class="comment-info__number">-5</div>
@@ -158,13 +163,15 @@
   						<div class="comment">
 	  						<div class="comment-info">
 	  							<div class="comment-info-left">
-		  							<div class="comment-info__user-icon comment-info__user-icon_3">
+		  							<div class="comment-info__user-icon" style="background-image:url(img/user-icon-1.png)">
 		  							</div>
-		  							<div class="comment-info-user-name">
-		  								<a class="comment-info-user-name__link" href="#">Vbogrov</a>,
-		  							</div>
-		  							<div class="comment-info__date">
-		  								21 апреля 2014 в 9:24
+		  							<div>
+			  							<span class="comment-info-user-name">
+			  								<a class="comment-info-user-name__link" href="#">Vbogrov</a>,
+			  							</span>
+			  							<span class="comment-info__date">
+			  								21 апреля 2014 в 9:24
+			  							</span>
 		  							</div>
 	  							</div>
 	  							<div class="comment-info-right">
@@ -179,45 +186,47 @@
   								<p>Книга достойна прочтения. Но перечитывать я бы не стал. Не понравились множественные логические не состыковки. А может просто, мое подсознание протестует против такого варианта будущего. Книга оставляет гнетущее впечатление. Задумка отличная, но мир описанный в книге показался слишком депрессивным. Слишком много грязи. Неужели бессмертие должно приводить только лишь к моральной деградации? С другой стороны, смотря на наше общество, понимаешь что отсутствие цели приводит именно к отупению. Отупение помноженное на бесконечность времени дает соответствующий итог.</p>
   							</div>
   						</div>
-  						<div class="comments-block-show-more">
-  							<a href="#" class="comments-block-show-more_link">Показать еще</a>
-  						</div>
   					</div>
+  					<div class="show-more">
+						<span class="show-more__text">Показать еще</span>
+					</div>
 				</div>
-				<div class="content-block-right">
-					<div class="form-authorization">
-						<div class="form-authorization__title">
-							Авторизация
+				<div class="container-right">
+					<div class="container-right-block">
+						<div class="form-authorization">
+							<div class="form-authorization__title">
+								Авторизация
+							</div>
+							<div class="form-authorization-fields">
+								<input class="form-authorization-fields__field form-authorization-field__field_login" type="text" name="login" placeholder="Логин">
+								<input class="form-authorization-fields__field form-authorization-field__field_password" type="password" name="password" placeholder="Пароль">
+							</div>
+							<div class="form-authorization-block">
+								<a class="form-authorization-block_link" href="#">Забыли пароль?</a>
+								<input class="button button_enter" type="button" name="enter" value="Войти">
+							</div>
 						</div>
-						<div class="form-authorization-fields">
-							<input class="form-authorization-fields__field form-authorization-field__field_login" type="text" name="login" placeholder="Логин">
-							<input class="form-authorization-fields__field form-authorization-field__field_password" type="password" name="password" placeholder="Пароль">
+						<div class="sign-in-social">
+							Войти через:
+							<div class="sign-in-social__icons">
+								<a class="sign-in-social__link sign-in-social__link_vk" href="#"></a>
+								<a class="sign-in-social__link sign-in-social__link_fb" href="#"></a>
+								<a class="sign-in-social__link sign-in-social__link_tw" href="#"></a>
+								<a class="sign-in-social__link sign-in-social__link_gl" href="#"></a>
+								<a class="sign-in-social__link sign-in-social__link_ok" href="#"></a>
+								<a class="sign-in-social__link sign-in-social__link_more" href="#"></a>
+							</div>
 						</div>
-						<div class="form-authorization-block">
-							<a class="form-authorization-block_link" href="#">Забыли пароль?</a>
-							<input class="form-authorization-block__input" type="button" name="enter" value="Войти">
+						<div class="registration-button">
+							<input class="button button_registration" type="button" name="registation" value="Регистрация">
 						</div>
-					</div>
-					<div class="sign-in-social">
-						Войти через:
-						<div class="sign-in-social__icons">
-							<a class="sign-in-social__link sign-in-social__link_vk" href="#"></a>
-							<a class="sign-in-social__link sign-in-social__link_fb" href="#"></a>
-							<a class="sign-in-social__link sign-in-social__link_tw" href="#"></a>
-							<a class="sign-in-social__link sign-in-social__link_gl" href="#"></a>
-							<a class="sign-in-social__link sign-in-social__link_ok" href="#"></a>
-							<a class="sign-in-social__link sign-in-social__link_more" href="#"></a>
-						</div>
-					</div>
-					<div class="registration-button">
-						<input class="registration-button_input" type="button" name="registation" value="Регистрация">
 					</div>
 				</div>
 			</div>
 			<div class="clear"></div>
 		</div>
 		<div class="footer">
-			<div class="footer-inner">
+			<div class="inner">
 				<div class="footer-left">
 					<div class="footer-left__сopyright">
 						© LitTime.ru 2014
