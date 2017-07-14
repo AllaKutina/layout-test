@@ -39,6 +39,7 @@ body {
 
 h1 {
 	font-weight: normal;
+	margin-bottom: 20px;
 }
 
 
@@ -140,6 +141,55 @@ h1 {
 	margin-left: 40px;
 	flex-shrink: 0;
 
+}
+
+.show-more {
+	text-transform: uppercase;
+	background-color: #eceadf;
+	text-align: center;
+	cursor: pointer;
+	padding: 10px 0;
+}
+
+
+.show-more__text {
+	color: #666666;
+	border-bottom: 1px dashed #d5d3ca;
+}
+
+
+.button {
+	background-color: #0d83dd;
+	box-shadow: 0 -2px #074778 inset;
+	border: none;
+	line-height: 30px;
+	color: white;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+
+.button_registration {
+	width: 100%;
+}
+
+.button_buy-book {
+	padding: 0 16px;
+}
+
+
+.button_filter {
+	width: 100%;
+	line-height: 20px;
+	color: white;
+	font-size: 11px;
+	flex-basis: 100px;
+	flex-shrink: 0;
+}
+
+
+.button_enter {
+	padding: 0 15px;
 }
 
 .search {
@@ -360,56 +410,6 @@ h1 {
 	text-decoration: none;
 	border-bottom: 1px dashed #d5dcdb;
 	line-height: 20px;
-}
-
-
-.show-more {
-	text-transform: uppercase;
-	background-color: #eceadf;
-	text-align: center;
-	cursor: pointer;
-	padding: 10px 0;
-}
-
-
-.show-more__text {
-	color: #666666;
-	border-bottom: 1px dashed #d5d3ca;
-}
-
-
-.button {
-	background-color: #0d83dd;
-	box-shadow: 0 -2px #074778 inset;
-	border: none;
-	line-height: 30px;
-	color: white;
-	border-radius: 2px;
-	cursor: pointer;
-}
-
-
-.button_registration {
-	width: 100%;
-}
-
-.button_buy-book {
-	padding: 0 16px;
-}
-
-
-.button_filter {
-	width: 100%;
-	line-height: 20px;
-	color: white;
-	font-size: 11px;
-	flex-basis: 100px;
-	flex-shrink: 0;
-}
-
-
-.button_enter {
-	padding: 0 15px;
 }
 
 
@@ -667,14 +667,217 @@ h1 {
 .last-bibliography__description {
 }
 
+
 .last-bibliography__description a {
 	text-decoration: none;
 	color: #454545;
 	border-bottom: 1px solid #a1a1a1;
 }
 
+
 .last-bibliography__description b {
 	color: #151515;
+}
+
+
+.author {
+	background-color: white;
+	margin-bottom: 40px;
+	padding: 20px;
+}
+
+
+.author__title {
+
+}
+
+
+.author__text p {
+	margin-bottom: 15px;
+}
+
+
+.author__text p:last-child {
+	margin-bottom: 0px;
+}
+
+
+.author__image {
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+
+.bibliography {
+
+}
+
+
+.bibliography__list {
+	list-style: none;
+}
+
+
+.bibliography__row {
+	display: block;
+	background-color: white;
+}
+
+
+.bibliography__item {
+	display: flex;
+	position: relative;
+	padding: 12px 20px;
+	border-bottom: 1px solid #e9e9e8;
+	align-items: center;
+}
+
+
+.bibliography__text {
+	margin-right: auto;
+	padding-left: 32px;
+}
+
+.bibliography__link {
+	text-decoration: none; 
+}
+
+.bibliography__link_black {
+	color: #454545;
+	border-bottom: 1px solid #dadad9;
+}
+
+.bibliography__link_blue {
+	color: #0d83dd;
+	border-bottom: 1px solid #d0e5f5;
+}
+
+
+.bibliography__link_grey {
+	color: #999999;
+	border-bottom: 1px solid #dadad9;
+	font-size: 11px;
+}
+
+
+.bibliography__year {
+	font-size: 12px;
+	color: #999999;
+}
+
+.bibliography__remark {
+	color: #999999;
+}
+
+.bibliography__icon {
+	position: absolute;
+	background-position: 0 0;
+	height: 25px;
+	width: 25px;
+	background-repeat: no-repeat;
+}
+
+
+.bibliography__icon_1 {
+	background-image: url("../img/icon-1.png");
+}
+
+
+.bibliography__icon_2 {
+	background-image: url("../img/icon-2.png");
+}
+
+.bibliography__icon_3 {
+	background-image: url("../img/icon-3.png");
+}
+
+
+.bibliography__icon_4 {
+	background-image: url("../img/icon-4.png");
+}
+
+
+.bibliography__icon_5 {
+	background-image: url("../img/icon-5.png");
+}
+
+
+.bibliography__icon_6 {
+	background-image: url("../img/icon-6.png");
+}
+
+
+.bibliography__item:hover {
+	background-color: #f6f6f5;
+}
+
+
+.bibliography__row .bibliography__row .bibliography__item {
+	padding-left: 54px;
+}
+
+
+.bibliography__row .bibliography__row .bibliography__row .bibliography__item {
+	padding-left: 90px;
+}
+
+
+.bibliography__properties {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+}
+
+
+.bibliography__raiting {
+	margin-right: 2px;
+}
+
+
+.bibliography__number {
+	font-size: 11px;
+	color: #999999;
+}
+
+
+.bibliography__my-mark {
+	display: flex;
+	border: 1px solid #cce7c8;
+	align-items: center;
+	padding: 8px;
+	border-radius: 2px;
+	margin-right: 6px;
+}
+
+
+.bibliography__chek-icon {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-image: url("../img/check-icon.png");
+	width: 13px;
+	height: 9px;
+	margin-right: 6px;
+}
+
+
+.bibliography__mark {
+	line-height: 14px;
+}
+
+
+.bibliography__icon-book {
+	display: inline-block;
+	background-image: url("../img/book-icon-grey.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	height: 16px;
+	width: 20px;
+	margin: 6px;
+}
+
+.bibliography__icon-book_read {
+	background-image: url("../img/book-icon-blue.png");
 }
 
 
