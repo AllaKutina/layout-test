@@ -44,13 +44,16 @@ h1 {
 
 
 .inner {
-	display: flex;
 	position: relative;
 	min-width: 960px;
 	max-width: 1280px;
 	margin: 0 auto;
-	align-items: center;
 	padding: 0 20px;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
 }
 
 .header {
@@ -79,11 +82,11 @@ h1 {
 
 .header-menu__list {
 	display: flex;
+	list-style: none;
 }
 
 
 .header-menu__item {
-	list-style: none;
 	text-align: center;
 	border-left: 1px solid #e9e9e8;
 	vertical-align: middle;
@@ -95,8 +98,8 @@ h1 {
 
 
 .header-menu__link {
-	display: block;
 	position: relative;
+	display: block;
 	text-decoration: none;
 	padding: 30px 15px;
 	color: #303030;
@@ -104,13 +107,16 @@ h1 {
 	box-sizing: border-box;
 }
 
-.header-menu__link_active {
-	color: white;
+.header-menu__item_active {
 	background-color: #0d83dd;
 	box-shadow: inset 0 -5px 0 0 #0a65ab; 
 } 
 
-.header-menu__link_active::after {
+.header-menu__item_active .header-menu__link {
+	color: white;
+}
+
+.header-menu__item_active .header-menu__link::after {
 	content: "";
 	position: absolute;
 	top: 80px;
@@ -126,7 +132,7 @@ h1 {
 }
 
 
-.inner_container {
+.flex_container {
 	justify-content: space-between;
 	align-items: flex-start;
 } 
@@ -519,7 +525,6 @@ h1 {
 	margin-left: 40px;
 	background: white;
 	margin-bottom: 40px;
-	height: 330px;
 	border-radius: 2px;
 }
 
@@ -611,7 +616,6 @@ h1 {
 	margin-left: 40px;
 	background: white;
 	margin-bottom: 40px;
-	height: 150px;
 	border-radius: 2px;
 }
 
@@ -621,26 +625,6 @@ h1 {
 	background-position: 50% 50%;
 	width: 30%;
 	flex-shrink: 0;
-}
-
-
-.last-bibliography__image_1 {
-	background-image: url("../img/last-bibliography-1.png");
-}
-
-
-.last-bibliography__image_2 {
-	background-image: url("../img/last-bibliography-2.png");
-}
-
-
-.last-bibliography__image_3 {
-	background-image: url("../img/last-bibliography-3.png");
-}
-
-
-.last-bibliography__image_4 {
-	background-image: url("../img/last-bibliography-4.png");
 }
 
 
@@ -826,7 +810,7 @@ h1 {
 .bibliography__properties {
 	margin-left: auto;
 	display: flex;
-	align-items: center;
+	align-items: baseline;
 }
 
 
@@ -873,11 +857,133 @@ h1 {
 	background-position: 0 0;
 	height: 16px;
 	width: 20px;
-	margin: 6px;
+	margin-right: 6px;
+	align-self: center;
 }
 
 .bibliography__icon-book_read {
 	background-image: url("../img/book-icon-blue.png");
+}
+
+
+.author-books {
+	display: flex;
+	border-bottom: 1px solid #eaeaea;
+	background-color: white;
+	padding: 20px;
+	padding-left: 0;
+}
+
+
+.author-books__item {
+	display: flex;
+	width: 50%;
+}
+
+.author-books-left {
+	display: flex;
+	flex-direction: column;
+	width: 100px;
+	margin-right: 20px;
+	margin-left: 20px;
+	flex-shrink: 0;
+}
+
+
+.author-books__image {
+	margin-bottom: 4px;
+	width: 100%;
+}
+
+
+.author-books-right {
+	width: 78%;
+}
+
+
+.author-books__title {
+	margin-bottom: 10px;
+}
+
+
+.author-books__link {
+	color: #0d83dd;
+	font-size: 16px;
+	border-bottom: 1px solid #cfe6f8;
+	text-decoration: none;
+	line-height: 22px;
+}
+
+
+.author-books__description {
+	color: #777777;
+	margin-bottom: 20px;
+}
+
+
+.author-books__description a {
+	text-decoration: none;
+	color: #777777;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+
+.author-books__description b {
+	color: #151515;
+}
+
+
+.author-books__comments-link {
+	font-size: 11px;
+	border-bottom: 1px solid #dadada;
+	text-decoration: none;
+	color: #454545;
+}
+
+.author-books__comments {
+	align-self: center;
+}
+
+
+.raiting-block {
+	display: flex;
+	border: 1px solid #dfdcc9;
+	align-items: center;
+	margin-bottom: 10px;
+	color: #151515;
+	height: 34px;
+}
+
+.raiting-right {
+	width: 40%;
+	background-color: #dfdcc9;
+	padding: 6px;
+	text-align: center;
+}
+
+.raiting-right__text {
+	font-size: 16px;
+}
+
+
+.raiting-left__text {
+	font-size: 12px;
+	line-height: 12px;
+}
+
+
+.raiting-left__number {
+	color: #0d83dd;
+	font-size: 10px;
+	line-height: 12px;
+
+}
+
+
+.raitong-left {
+	width: 60%;
+	padding: 6px;
+	text-align: right;
 }
 
 
@@ -1254,12 +1360,11 @@ h1 {
 
 
 .user-menu__list {
-
+	list-style: none;
 }
 
 .user-menu__item {
 	position: relative;
-	list-style: none;
 	vertical-align: middle;
 	border-bottom: 1px solid #dadada;
 }
@@ -1268,43 +1373,88 @@ h1 {
 	border-bottom: none;
 }
 
+
+.user-menu__item_active {
+	
+}
+
+
 .user-menu__icon {
 	position: absolute;
 	left: 20px;
 	top: calc(50% - 8px);
 	background-repeat: no-repeat;
-	background-position: 0px 0;
 	height: 16px;
 	width: 16px;
+	background-image: url("../img/user-menu-icons.png");
 }
+
+
+
+.user-menu__item_active .user-menu__icon_messages {
+	background-position: 0 -20px;
+}
+
+.user-menu__item_active .user-menu__icon_friends {
+	background-position: -17px -20px;
+}
+
+.user-menu__item_active .user-menu__icon_news {
+	background-position: -36px -20px;
+}
+
+.user-menu__item_active .user-menu__icon_read {
+	background-position: -55px -20px;
+}
+
+.user-menu__item_active .user-menu__icon_marks {
+	background-position: -72px -20px;
+}
+
+.user-menu__item_active .user-menu__icon_settings {
+	background-position: -90px -20px;
+}
+
+
+.user-menu__item_active .user-menu__icon_log-out {
+	background-position: -107px -20px;
+}
+
 
 .user-menu__icon_messages {
-	background-image: url("../img/messagers-icon.png");
+	background-position: 0 0;
 }
+
 
 .user-menu__icon_friends {
-	background-image: url("../img/friends-icon.png");
+	background-position: -17px 0;
 }
+
 
 .user-menu__icon_news {
-	background-image: url("../img/news-icon.png");
+	background-position: -36px 0;
 }
+
 
 .user-menu__icon_read {
-	background-image: url("../img/read-icon.png");
+	background-position: -55px 0;
 }
+
 
 .user-menu__icon_marks {
-	background-image: url("../img/marks-icon.png");
+	background-position: -72px 0;
 }
+
 
 .user-menu__icon_settings {
-	background-image: url("../img/settings-icon.png");
+	background-position: -90px 0;
 }
 
+
 .user-menu__icon_log-out {
-	background-image: url("../img/log-out-icon.png");
+	background-position: -107px 0;
 }
+
 
 .user-menu__link {
 	display: block;
@@ -1312,6 +1462,12 @@ h1 {
 	color: #151515;
 	padding: 10px 20px 10px 50px;
 }
+
+
+.user-menu__item_active .user-menu__link {
+	color: #0d83dd;
+}
+
 
 .user-menu__number {
 	display: inline-block;
