@@ -1,0 +1,251 @@
+
+
+html {
+	height: 100%;
+}
+
+
+body, h1, h2, h3, h4, h5, h6, a, ol, ul, li, p {
+	margin: 0px;
+	padding: 0px;
+	font-weight: normal;
+}
+
+body {
+	color: #454545;
+	background-color: #dfdcc9;
+	font-size: 14px;
+	line-height: 22px;
+	font-family: 'PT Serif', Arial;
+}
+
+.body-full-screen {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.body-full-screen > * {
+	width: 100%;
+}
+
+@font-face {
+    font-family: 'PT Serif';
+    src: local('PT Serif'), local('PTSerif-Regular'), url('fonts/ptserif.woff2') format('woff2'), url('fonts/ptserif.woff') format('woff'), url('fonts/ptserif.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Serif';
+    src: local('PT Serif Italic'), local('PTSerif-Italic'), url('fonts/ptserifitalic.woff2') format('woff2'), url('fonts/ptserifitalic.woff') format('woff'), url('fonts/ptserifitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'PT Serif';
+    src: local('PT Serif Bold'), local('PTSerif-Bold'), url('fonts/ptserifbold.woff2') format('woff2'), url('fonts/ptserifbold.woff') format('woff'), url('fonts/ptserifbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Serif';
+    src: local('PT Serif Bold Italic'), local('PTSerif-BoldItalic'), url('fonts/ptserifbolditalic.woff2') format('woff2'), url('fonts/ptserifbolditalic.woff') format('woff'), url('fonts/ptserifbolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+h1 {
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+.inner {
+	position: relative;
+	margin: 0 auto;
+	padding: 0 20px;
+	max-width: 1280px;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+
+	&_header {
+		display: flex;
+		align-items: center;
+
+		@media screen and (max-width: 749px) {
+			flex-direction: column;
+		}
+	}
+
+	&_container {
+		align-items: flex-start;
+
+		@media screen and (max-width: 819px) {
+			flex-direction: column;
+		}
+	}
+}
+
+.show-more {
+	text-transform: uppercase;
+	background-color: #eceadf;
+	text-align: center;
+	cursor: pointer;
+	padding: 10px 0;
+
+	&__text {
+		color: #666666;
+		border-bottom: 1px dashed #d5d3ca;
+	}
+}
+
+
+.button {
+	background-color: #0d83dd;
+	box-shadow: 0 -2px #074778 inset;
+	border: none;
+	line-height: 30px;
+	color: white;
+	border-radius: 2px;
+	cursor: pointer;
+
+	&_registration {
+		width: 100%;
+	}
+
+	&_buy-book {
+		padding: 0 16px;
+	}
+
+	&_filter {
+		width: 100%;
+		line-height: 20px;
+		color: white;
+		font-size: 11px;
+		flex-basis: 100px;
+		flex-shrink: 0;
+	}
+
+	&_enter {
+		padding: 0 15px;
+	}
+
+	&_active {
+		background-color: #e7f3fc;
+		box-shadow: 0 -2px #dadada inset;
+		color: white;
+	}
+}
+
+.main-title {
+	position: relative;
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 40px;
+
+	&__text {
+		position: relative;
+		display: inline-block;
+		padding: 0 20px;
+		font-size: 28px;
+		line-height: 30px;
+		background-color: #dfdcc9;
+	}
+
+	&__line {
+		overflow: hidden;
+		position: absolute;
+		height: 1px;
+		left: 0;
+		right: 0;
+		background-color: #bcb9a8;
+		top: 50%;
+	}
+}
+
+
+.raiting-stars {
+
+	&_inline {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	&__icon {
+		display: inline-block;
+		background-image: url("../img/star-grey.png");
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		width: 14px;
+		height: 14px;
+		margin-right: 2px;
+
+		&_active {
+			background-image: url("../img/star-blue.png");
+		}
+	}
+}
+
+
+.raiting-block {
+	display: flex;
+	border: 1px solid #dfdcc9;
+	align-items: center;
+	margin-bottom: 10px;
+	color: #151515;
+	height: 34px;
+
+	&-right {
+		width: 40%;
+		background-color: #dfdcc9;
+		padding: 6px;
+		text-align: center;
+
+		&__text {
+			font-size: 16px;
+		}
+	}
+
+	&-left {
+		width: 60%;
+		padding: 6px;
+		text-align: right;
+
+		&__text {
+			font-size: 12px;
+			line-height: 12px;
+		}
+
+		&__number {
+			color: #0d83dd;
+			font-size: 10px;
+			line-height: 12px;
+		}
+	}
+}
+
+.registration-button {
+	padding: 20px;
+}
+
+@import "components/header.less";
+@import "components/banner.less";
+@import "components/footer.less";
+@import "components/container.less";
+@import "components/error-404.less";
+@import "components/filter.less";
+@import "components/search.less";
+@import "components/user-card.less";
+@import "components/profile.less";
+@import "components/form-authorization.less";
+@import "components/book.less";
+@import "components/tabs.less";
+@import "components/comments-block.less";
+@import "components/author-books.less";
+@import "components/bibliography.less";
+@import "components/author.less";
+@import "components/last-bibliography.less";
+@import "components/main-novelties.less";
+@import "components/main-news.less";

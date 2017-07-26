@@ -1,0 +1,68 @@
+.tabs {
+	display: flex;
+
+  &-tab {
+  	display: flex;
+  	position: relative;
+  	background-color: #f8f8f4;
+  	padding: 4px 20px 0px;
+  	cursor: pointer;
+  	align-items: baseline;
+  	height: 36px;
+
+    &__icon {
+    	background-repeat: no-repeat;
+    	background-position: 0 50%;
+    	width: 15px;
+    	margin-right: 5px;
+    	height: 20px;
+    	position: relative;
+    	top: 4px;
+
+      &_comments {
+      	background-image: url("../img/сomments-icon-tab.png");
+      }
+
+      &_reviews {
+      	background-image: url("../img/reviews-icon-tab.png");
+
+        &_active {
+        	background-image: url("../img/reviews-icon-tab-active.png");
+        }
+      }
+    }
+
+    &__text {
+    	margin-right: 5px;
+    }
+
+    &__number {
+    	color: #999999;
+    	font-size: 12px;
+
+      &_active {
+      	color: white;
+      }
+    }
+
+    &_active {
+    	background-color: #0d83dd;
+    	color: white;
+    	box-shadow: inset 0 -5px 0 0 #0a65ab;
+
+      &:after {
+      	content: "";
+      	position: absolute;
+      	top: 40px;
+      	right: 50%;
+      	margin-right: -7px;
+      	border: 7px solid transparent;
+      	border-top: 7px solid #0a65ab;
+      }
+    }
+  }
+
+  @media screen and (max-width: 570px) {
+  	flex-direction: column;
+  }
+}

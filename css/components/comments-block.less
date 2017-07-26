@@ -1,0 +1,134 @@
+.comments-block {
+	background-color: #ffffff;
+}
+
+.comment {
+	padding: 32px 20px;
+	background-color: #ffffff;
+	border-top: 1px solid #e9e9e8;
+
+  &:first-child {
+  	border-top: none;
+  }
+
+  &__link{
+  	color: #0d83dd;
+  	text-decoration: none;
+  	border-bottom: 1px dashed #cfe6f8;
+  }
+
+  &-info {
+  	display: flex;
+  	margin-bottom: 22px;
+
+    &-left {
+    	display: flex;
+    	align-items: center;
+
+      @media screen and (max-width: 570px) {
+      	margin-bottom: 20px;
+      }
+    }
+
+    &__user-icon {
+    	margin-right: 8px;
+    	height: 32px;
+    	width: 32px;
+    	background-repeat: no-repeat;
+    	border-radius: 15px;
+    }
+
+    &-user-name {
+
+      &__link {
+      	color: #0d83dd;
+      	text-decoration: none;
+      	border-bottom: 1px solid #cfe6f8;
+      }
+    }
+
+    &__date {
+    	color: #999999;
+    	font-size: 12px;
+    	padding-left: 15px;
+
+      @media screen and (max-width: 570px) {
+      	display: block;
+      	padding-left: 0px;
+      }
+    }
+
+    &-right {
+    	display: flex;
+    	margin-left: auto;
+    	align-items: center;
+
+      @media screen and (max-width: 570px) {
+      	margin: 0;
+      }
+    }
+
+    &__number {
+    	color: #999999;
+    	margin-right: 8px;
+
+      &_blue {
+      	color: #0d83dd;
+      }
+    }
+
+    @media screen and (max-width: 570px) {
+    	flex-direction: column;
+    }
+  }
+
+  &__text {
+  	width: 100%;
+  }
+
+  &__arrow {
+  	background-repeat: no-repeat;
+  	background-position: 0 0;
+  	height: 24px;
+  	width: 24px;
+  	margin-right: 8px;
+  	cursor: pointer;
+
+    &_up {
+    	background-image: url("../img/arrow-up-icon.png");
+    	margin-right: 8px;
+
+      &_active {
+      	background-image: url("../img/arrow-up-icon-active.png");
+      }
+    }
+
+    &_down {
+    	background-image: url("../img/arrow-down-icon.png");
+    	margin-right: 20px;
+
+      &_active {
+      	background-image: url("../img/arrow-down-icon-active.png");
+      }
+    }
+
+    &__rating-icon {
+    	background-image: url("../img/star-icon.png");
+    	background-repeat: no-repeat;
+    	background-position: 0 0;
+    	height: 14px;
+    	width: 16px;
+    	margin-right: 8px;
+    }
+
+    &__rating-number {
+    	color: #151515;
+    	line-height: 16px;
+    	align-self: center;
+
+      &_grey{
+      	color: #999999;
+      }
+    }
+  }
+}

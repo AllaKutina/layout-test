@@ -1,0 +1,138 @@
+.user-card {
+	display: flex;
+	border-bottom: 1px solid #dadada;
+	background-color: #f9f8f4;
+	padding: 20px;
+	align-items: center;
+
+	&__foto {
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		height: 50px;
+		width: 50px;
+		border-radius: 25px;
+		margin-right: 12px;
+	}
+
+	&__name {
+		color: #151515;
+		font-size: 16px;
+	}
+
+	&__first-name {
+		font-weight: bold;
+	}
+
+	&__second-name {
+	}
+}
+
+.user-menu {
+	&__list {
+		list-style: none;
+	}
+
+	&__item {
+		position: relative;
+		vertical-align: middle;
+		border-bottom: 1px solid #dadada;
+
+		&:last-child {
+			border-bottom: none;
+		}
+
+		&_active {
+
+			& .user-menu__link {
+				color: #0d83dd;
+			}
+
+			& .user-menu__icon_messages {
+				background-position: 0 -20px;
+			}
+
+			& .user-menu__icon_friends {
+				background-position: -17px -20px;
+			}
+
+			& .user-menu__icon_news {
+				background-position: -36px -20px;
+			}
+
+			& .user-menu__icon_read {
+				background-position: -55px -20px;
+			}
+
+			& .user-menu__icon_marks {
+				background-position: -72px -20px;
+			}
+
+			& .user-menu__icon_settings {
+				background-position: -90px -20px;
+			}
+
+
+			& .user-menu__icon_log-out {
+				background-position: -107px -20px;
+			}
+		}
+	}
+
+	&__icon {
+		position: absolute;
+		left: 20px;
+		top: calc(~"50% - 8px");
+		background-repeat: no-repeat;
+		height: 16px;
+		width: 16px;
+		background-image: url("../img/user-menu-icons.png");
+
+		&_messages {
+			background-position: 0 0;
+		}
+
+		&_friends {
+			background-position: -17px 0;
+		}
+
+		.user-menu__icon_news {
+			background-position: -36px 0;
+		}
+
+		&_read {
+			background-position: -55px 0;
+		}
+
+		&_marks {
+			background-position: -72px 0;
+		}
+
+		&_settings {
+			background-position: -90px 0;
+		}
+
+		&_log-out {
+			background-position: -107px 0;
+		}
+	}
+
+	&__link {
+		display: block;
+		text-decoration: none;
+		color: #151515;
+		padding: 10px 20px 10px 50px;
+	}
+
+	&__number {
+		display: inline-block;
+		height: 18px;
+		width: 18px;
+		border-radius: 10px;
+		border: 1px solid #dadada;
+		margin-left: 5px;
+		font-size: 11px;
+		text-align: center;
+		line-height: 16px;
+		box-sizing: border-box;
+	}
+}

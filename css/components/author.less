@@ -1,0 +1,31 @@
+.author {
+	background-color: white;
+	margin-bottom: 40px;
+	padding: 20px;
+
+  &__title {
+  }
+
+  &__text {
+
+    & p {
+    	margin-bottom: 15px;
+
+      &:last-child {
+      	margin-bottom: 0px;
+      }
+    }
+  }
+
+  &__image {
+  	float: right;
+  	margin-left: 20px;
+  	margin-bottom: 20px;
+
+    @media screen and (max-width: 500px) {
+    	float: none;
+    	text-align: center;
+    	margin-left: 0;
+    }
+  }
+}

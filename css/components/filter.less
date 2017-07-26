@@ -1,0 +1,213 @@
+.filter {
+	margin-top: -35px;
+
+  &__button {
+  	text-transform: uppercase;
+  	background-color: #eceadf;
+  	text-align: center;
+  	cursor: pointer;
+  	padding: 10px 0;
+  	margin-top: -40px;
+  }
+
+  &__title {
+  	color: #999999;
+  	font-size: 34px;
+  	font-style: italic;
+  	margin-bottom: 30px;
+  }
+
+  &-block {
+  	padding: 20px 20px;
+  	background-color: white;
+  	border-bottom: 1px solid #eceadf;
+
+    &:last-child {
+    	border-bottom: none;
+    }
+
+    &_include {
+    }
+
+    &_exclude {
+    	background-color: #f9f9f5;
+    }
+
+    &_flex {
+    	display: flex;
+    	align-items: center;
+
+      @media screen and (max-width: 607px) {
+      	flex-direction: column;
+      }
+    }
+
+    &__close {
+    	margin-left: auto;
+    	color: #95a8a6;
+    	font-size: 20px;
+    	text-decoration: none;
+    	border-bottom: 1px dashed #d5dcdb;
+    	line-height: 20px;
+
+      @media screen and (max-width: 607px) {
+      	margin: 0;
+      }
+    }
+  }
+
+  &-columns {
+  	position: relative;
+  	display: flex;
+  	flex-shrink: 0;
+
+    @media screen and (max-width: 554px) {
+    	flex-direction: column;
+    }
+  }
+
+  &-section {
+  	width: 50%;
+  	margin-right: 50px;
+
+    &_caption {
+    	color: #151515;
+    	font-size: 20px;
+    	margin-right: 8px;
+    }
+
+    &:last-child {
+    	margin-right: 0;
+    }
+
+    &-options {
+    	position: relative;
+    	display: flex;
+    	align-items: center;
+    	margin-bottom: 10px;
+    }
+
+    &-variants {
+
+      &__link {
+      	display: inline-block;
+      	text-decoration: none;
+      	margin-right: 15px;
+      	color: #454545;
+      	white-space: nowrap;
+
+        &:hover {
+          & .filter-section-variants__icon {
+          	background-image:  url("../img/cross-red-icon.png");
+          }
+
+          & .filter-section-variants__text {
+          	color: #000000;
+          	border-bottom: 1px solid #959593;
+          }
+        }
+      }
+
+      &__text {
+      	border-bottom: 1px solid #b5b5b5;
+      	line-height: 16px;
+      	margin-right: 5px;
+      }
+
+      &__icon {
+      	display: inline-block;
+      	background-image:  url("../img/cross-icon.png");
+      	background-repeat: no-repeat;
+      	background-position: 0 0;
+      	width: 5px;
+      	height: 5px;
+      }
+    }
+
+    @media screen and (max-width: 554px) {
+    	margin-bottom: 20px;
+    }
+  }
+
+  &-search {
+  	position: relative;
+  	text-decoration: none;
+  	margin: 0;
+  	padding: 0;
+  	margin-right: 32px;
+
+    &__icon {
+    	position: absolute;
+    	background-image:  url("../img/search-big.png");
+    	background-repeat: no-repeat;
+    	background-position: 0 0;
+    	width: 31px;
+    	height: 31px;
+    }
+
+    &__text {
+    	padding-left: 52px;
+    	color: #95a8a6;
+    	font-size: 40px;
+    }
+
+    @media screen and (max-width: 607px) {
+    	margin-bottom: 10px;
+    }
+  }
+
+  &-checkbox {
+  	display: flex;
+
+    &__input {
+    	margin-right: 5px;
+    	outline: none;
+    	-webkit-appearance:none;
+    	width: 14px;
+    	height: 14px;
+    	border:1px solid #95a8a6;
+    	box-sizing: border-box;
+    	border-radius: 4px;
+
+      &:checked {
+
+        &:before {
+          content:"";
+        	display:block;
+        	width: 6px;
+        	height: 9px;
+        	border: 0 solid black;
+        	border-width:0 2px 2px 0;
+        	-webkit-transform:rotateZ(45deg);
+        	margin: -2px 2px;
+        }
+      }
+
+      @media screen and (max-width: 607px) {
+      	margin-bottom: 10px;
+      }
+    }
+
+    &__label {
+    	color: #95a8a6;
+    	border-bottom: 1px dashed #d5dcdb;
+    	line-height: 20px;
+    	text-decoration: none;
+    }
+
+    &__mark {
+    	cursor: pointer;
+    	margin-top: -5px;
+    	height: 18px;
+    	width: 18px;
+    	border-radius: 10px;
+    	border: 1px solid #d5dcdb;
+    	margin-left: 5px;
+    	font-size: 10px;
+    	text-align: center;
+    	line-height: 16px;
+    	box-sizing: border-box;
+    	color: #95a8a6;
+    }
+  }
+}

@@ -1,0 +1,128 @@
+.header {
+	position: relative;
+	background-color: #f9f8f4;
+
+  &-logo {
+  	margin-right: auto;
+
+    &__link {
+    }
+
+    &__image {
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 749px) {
+    	padding-top: 20px;
+    	margin: 0;
+    	margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 479px) {
+    	padding-top: 20px;
+    	margin: 0;
+    	margin-bottom: 20px;
+    }
+  }
+
+  &-right {
+  	margin-left: auto;
+
+    @media screen and (min-width: 480px) and (max-width: 749px) {
+      margin: 0;
+    }
+
+    @media screen and (max-width: 479px) {
+    	margin: 0;
+    	width: 100%;
+    }
+  }
+
+  &-menu {
+    &__list {
+    	display: flex;
+    	list-style: none;
+
+      @media screen and (max-width: 479px) {
+      	flex-direction: column;
+      }
+    }
+
+    &__item {
+    	text-align: center;
+    	border-left: 1px solid #e9e9e8;
+    	vertical-align: middle;
+
+      &_active {
+      	background-color: #0d83dd;
+      	box-shadow: inset 0 -5px 0 0 #0a65ab;
+
+				& .header-menu__link {
+				  color: white;
+				}
+
+				& .header-menu__link::after {
+				  content: "";
+				  position: absolute;
+				  top: 80px;
+				  right: 50%;
+				  margin-right: -7px;
+				  border: 7px solid transparent;
+				  border-top: 7px solid #0a65ab;
+
+					@media screen and (max-width: 479px) {
+						content: "";
+						position: absolute;
+						top: 52px;
+						right: 50%;
+						margin-right: -7px;
+						border: 7px solid transparent;
+						border-top: 7px solid #0a65ab;
+					}
+				}
+
+				@media screen and (max-width: 479px) {
+					text-align: center;
+				}
+      }
+
+			&:last-child {
+			  border-right: 1px solid #e9e9e8;
+			}
+
+			&:first-child {
+				@media screen and (max-width: 479px) {
+					border-top: 1px solid #e9e9e8;
+				}
+			}
+
+      @media screen and (max-width: 479px) {
+      	border-left: none;
+      	border-bottom: 1px solid #e9e9e8;
+      }
+
+			@media screen and (max-width: 479px) {
+				border-right: 0;
+			}
+
+    }
+
+    &__link {
+    	position: relative;
+    	display: block;
+    	text-decoration: none;
+    	padding: 30px 15px;
+    	color: #303030;
+    	height: 80px;
+    	box-sizing: border-box;
+
+      @media screen and (max-width: 479px) {
+      	padding: 15px 15px;
+      	height: 50%;
+      }
+    }
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 749px) {
+  	flex-direction: column;
+  }
+}

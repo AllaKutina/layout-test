@@ -1,0 +1,22 @@
+{
+  "name": "littime",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "styles": "node_modules/.bin/lessc css/style.less css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllaKutina/layout-test.git"
+  },
+  "author": "Alla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AllaKutina/layout-test/issues"
+  },
+  "homepage": "https://github.com/AllaKutina/layout-test#readme",
+  "dependencies": {
+    "less": "^2.7.2"
+  }
+}

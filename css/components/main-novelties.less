@@ -1,0 +1,88 @@
+.main-novelties {
+	display: flex;
+	margin-left: -40px;
+	flex-wrap: wrap;
+
+  &__item {
+  	display: flex;
+  	width: calc(~"50% - 40px");
+  	margin-left: 40px;
+  	background: white;
+  	margin-bottom: 40px;
+  	border-radius: 2px;
+
+    @media screen and (min-width: 445px) and (max-width: 767px) {
+    	width: 100%;
+    	margin-left: 0;
+    }
+
+    @media screen and (max-width: 444px) {
+    	width: 100%;
+    	margin-left: 0;
+    	flex-direction: column;
+    }
+  }
+
+  &__image {
+  	background-repeat: no-repeat;
+  	background-position: 50% 50%;
+  	width: 40%;
+  	flex-shrink: 0;
+  	background-size: cover;
+
+    @media screen and (max-width: 444px) {
+    	height: 170px;
+    	width: 100%;
+    	align-self: center;
+    }
+  }
+
+  &__text {
+  	width: 60%;
+  	padding: 24px 20px;
+  	box-sizing: border-box;
+
+    @media screen and (max-width: 444px) {
+    	width: 100%;
+    }
+  }
+
+  &__title {
+  	margin-bottom: 10px;
+  }
+
+  &__link {
+  	color: #151515;
+  	font-size: 22px;
+  	border-bottom: 1px solid #a1a1a1;
+  	text-decoration: none;
+  	line-height: 22px;
+  }
+
+  &__description {
+  	margin-bottom: 15px;
+
+    & a {
+    	text-decoration: none;
+    	color: #151515;
+    	border-bottom: 1px solid #a1a1a1;
+    }
+
+    & b {
+    	color: #151515;
+    }
+  }
+
+  &-raiting {
+  	margin-bottom: 15px;
+  }
+
+  &__reviews {
+  	font-size: 11px;
+  }
+
+  @media screen and (max-width: 767px) {
+  	flex-direction: column;
+  	margin-left: 0;
+  }
+}
